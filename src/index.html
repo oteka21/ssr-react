@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count</title>
+</head>
+<body>
+  <button id="less">-</button>
+  <h3 id="result">0</h3>
+  <button id="more">+</button>
+  <script>
+    const morebtn = document.querySelector('#more')
+    const lessbtn = document.querySelector('#less')
+    const result = document.querySelector('#result')
+
+    function sum(){
+      result.innerHTML = +result.innerHTML + 1
+    }
+
+    function rest(num){
+      result.innerHTML = +result.innerHTML - 1
+    }
+
+    morebtn.addEventListener("click", sum)
+    lessbtn.addEventListener("click", rest)
+
+
+  </script>
+</body>
+</html>
