@@ -10,6 +10,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: ['babel-loader']
       }
     ]
@@ -22,7 +23,8 @@ module.exports = {
       template: require('html-webpack-template'),
       // inject: false,
       appMountId: 'app',
-      filename: 'index.html'
+      filename: 'index.html',
+      title: "My ssr app"
     })
   ]
 }
