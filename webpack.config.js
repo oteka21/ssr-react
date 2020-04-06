@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
       }
@@ -26,5 +26,8 @@ module.exports = {
       filename: 'index.html',
       title: "My ssr app"
     })
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true
+  }
 }

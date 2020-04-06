@@ -22,12 +22,21 @@
     "express": "4.17.1",
     "ignore-styles": "5.0.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/preset-react": "7.9.4",
     "babel-loader": "8.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1",
     "html-webpack-plugin": "4.0.4",
     "html-webpack-template": "6.2.0",
     "webpack": "4.42.1",
