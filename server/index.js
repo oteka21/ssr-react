@@ -1,7 +1,6 @@
 require('ignore-styles')
 require('@babel/register')({
-  ignore: [/node_modules/],
-  // presets: ["@babel/preset-react"]
+  ignore: [/node_modules/]
 })
 
 require('./server')

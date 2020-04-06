@@ -1,8 +1,11 @@
 const path = require('path')
-const htmlWebpackPlugin = require("html-webpack-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
+  output: {
+    filename: '[name].[contenthash].js'
+  },
   module: {
     rules: [
       {
@@ -15,9 +18,11 @@ module.exports = {
     extensions: ['.js','.jsx']
   },
   plugins: [
-    new htmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       template: require('html-webpack-template'),
-      appMountId: "app"
+      // inject: false,
+      appMountId: 'app',
+      filename: 'index.html'
     })
   ]
 }
