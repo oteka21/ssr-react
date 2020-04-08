@@ -32,6 +32,8 @@ app.use('/', (req, res, next) => {
     styleTags = sheet.getStyleTags()
   } catch (err) {
     console.error(err)
+  } finally {
+    sheet.seal()
   }
 
   const data = fs.readFileSync(path.resolve(__dirname, '..', 'dist/index.html'), 'utf-8')
